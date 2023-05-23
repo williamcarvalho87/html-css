@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em Html5</title>
+</head>
+<body>
+    <h1>Imagens Dinamicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes, ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Audios</h1>
+    <p>Vamos aprender a reproduzir audios em HTML5</p>
+    <p>Músicas excelentes.</p>
+    <audio src="midia/the-charmer's.mp3" controls autoplay></audio> <br>
+    <audio src="midia/lotus-pond.mp3" controls autoplay></audio> <br>
+    <p>Um podcast sobre tecnologia com meu professor Gustavo Guanabara.</p>
+    <audio src="midia/guanacast-33.mp3" controls autoplay>
+        <p>Seu navegador é incompativel com a reprodução?</p>       
+        <p><a href="midia/the-charmer's.mp3">Clique aqui</a> para baixar a musica 1.</p> <br>
+        <p><a href="midia/lotus-pond.mp3">Clique aqui</a> para baixar a música 2.</p> <br>
+        <p><a href="midia/guanacast-33.mp3">Clique aqui</a> para baixar o podcast.</p>
+    </audio>
+  
+      
+</body>
+</html>
+
+<!--Podemos fazer o comando de audio para vários formatos da seguinte forma:
+<audio preload="metadata" controls>
+    <source src="midia/musica.mp3" type="audio/mp3"
+    <source src="midia/musica.ogg" type="audio/ogg"
+    <source src="midia/musica.wav" type="audio/wav"
+    obs: tentar evitar ao máximo arquivos WAV, pois são arquivos extremamente pesados.
+    Na Tag audio temos outros parametros também:
+    No preload existem 3 parametros:
+    Auto: É complicado pois com essa config ativa vai informar ao navegador que o site só terminou de carregar quando o áudio estiver 100% carregado, 'cuidado com ela, pois audios extremamente grandes pode fazer o site ficar lento.'
+    Metadado: Vai carregar somente alguns dados do arquivo como, nome, duração, data.
+    none: Não carrega nada, somente quando o usuário interagir.
+    Parametro Loop: Para quando você quer que o audio execute sem parar.
+-->
