@@ -23,7 +23,7 @@ html, body {
 
 header {
     
-    background-color: black;
+    background-image: linear-gradient(to bottom, black, #646464, grey);
     color: white;
     text-align: center;
     
