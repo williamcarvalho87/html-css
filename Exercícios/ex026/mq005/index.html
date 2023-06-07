@@ -1,0 +1,48 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Media Querie</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="estilos/style.css">
+    </head>
+    <body>
+        <header>
+            
+            <h1>Meu site</h1>
+            <span id="burger" class="material-icons" onclick="clickMenu()">menu</span>
+            <menu id="men">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Empresa</a></li>
+                    <li><a href="">Sobre Nós</a></li>
+                    <li><a href="">Fale Conosco</a></li>
+                    <li><a href="">Localização</a></li>
+                </ul>
+            </menu>
+
+        </header>
+
+        <main>
+            <article>
+                <h2>Testando Media Queries</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, veniam deleniti, sapiente voluptatum est nihil numquam harum quidem, unde vero dolores debitis blanditiis. Sed dolore adipisci, quam ipsam hic officiis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aut corrupti, modi iusto sit molestias eius recusandae excepturi corporis, ab, molestiae perspiciatis consectetur quidem eligendi facilis quo soluta repudiandae error!</p>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatem vero soluta magnam laudantium maiores. Quod aliquam iure dolores aut. Quos enim itaque cumque aspernatur ratione ut quo esse et sapiente!Lorem</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptatem cupiditate id nostrum. Tempore architecto nihil similique amet ratione quaerat, laborum voluptatum quae odit beatae facilis molestiae vero veniam quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias totam nobis est culpa. Eius quas facere, quisquam nam ut dicta harum nostrum iste laudantium praesentium velit perspiciatis assumenda a non.</p>
+            </article>
+        </main>
+        <script>
+            function clickMenu() {
+                if (men.style.display == 'block') {
+                    men.style.display = 'none'
+                } else {
+                    men.style.display = 'block'
+                }    
+            }
+        </script>
+    </body>
+    </html>
