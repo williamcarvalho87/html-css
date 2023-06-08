@@ -7,8 +7,9 @@
         <title>Media Querie</title>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/media-query.css">
     </head>
-    <body>
+    <body onresize="mudoutamanho()">
         <header>
             
             <h1>Meu site</h1>
@@ -36,6 +37,13 @@
             </article>
         </main>
         <script>
+
+            function mudoutamanho() {
+                if (window.innerWidth >= 768) {
+                 men.style.display = 'block'   
+                } else {                                 menu.style.display = 'none'
+                }
+            }
             function clickMenu() {
                 if (men.style.display == 'block') {
                     men.style.display = 'none'
